@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> MASTER FUTURE WITH AI FILMMAKING </title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    // Countdown Timer Script
+    const launchDate = new Date("2025-06-10T00:00:00").getTime();
+    const interval = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = launchDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+      if (distance < 0) {
+        clearInterval(interval);
+        document.getElementById("countdown").innerHTML = "Course Launched!";
+      }
+    }, 1000);
+  </script>
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 px-4 bg-gradient-to-b from-black to-gray-900">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Master the Future of Filmmaking with AI</h1>
+    <p class="text-lg md:text-xl text-gray-300 mb-4 max-w-2xl mx-auto">
+      Learn to create stunning visuals and compelling stories using the latest AI tools — no prior experience needed.
+    </p>
+    <p id="countdown" class="text-2xl text-yellow-400 font-bold mb-2"></p>
+    <p class="text-red-400 text-lg font-semibold mb-4">Limited Time Offer: <span class="line-through">₹799</span> <span class="text-green-400">Now ₹499</span></p>
+    <a href="#payment" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg text-lg">
+      Enroll Now
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-16 px-6 bg-gray-900">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Who We Are</h2>
+      <p class="text-gray-300 text-lg">
+        We are a team of AI filmmakers pushing the boundaries of storytelling. Our mission is to empower creators like you to harness the power of AI to bring your cinematic visions to life — faster, smarter, and more creatively than ever before.
+      </p>
+    </div>
+  </section>
+
+  <!-- What You'll Learn -->
+  <section class="py-16 px-6 bg-black">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">What You’ll Learn</h2>
+      <div class="grid md:grid-cols-2 gap-6 text-left text-gray-300">
+        <ul class="space-y-3">
+          <li>✅ Write screenplays with AI tools like ChatGPT</li>
+          <li>✅ Generate visuals using Sora, Midjourney, and Runway</li>
+          <li>✅ Structure, direct, and edit your own AI short films</li>
+        </ul>
+        <ul class="space-y-3">
+          <li>✅ Build a complete AI filmmaking workflow</li>
+          <li>✅ Publish and monetize your AI-created content</li>
+          <li>✅ Get feedback and support in a creator community</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curriculum Section -->
+  <section class="py-16 px-6 bg-gray-900">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">Course Curriculum</h2>
+      <div class="text-left text-gray-300 space-y-4">
+        <p>📖 Week 1: Introduction to AI in Filmmaking</p>
+        <p>🎬 Week 2: Writing with AI – Prompt Engineering & Screenwriting</p>
+        <p>🧠 Week 3: Generating Visuals using Midjourney & Sora</p>
+        <p>📹 Week 4: Directing & Editing with AI tools (RunwayML, Pika)</p>
+        <p>🎞️ Week 5: Project Development – Create Your Short Film</p>
+        <p>🚀 Week 6: Launch & Monetize – Releasing Your Film</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificate Preview Section -->
+  <section class="py-16 px-6 bg-black text-center">
+    <h2 class="text-3xl font-bold mb-6">Certificate of Completion</h2>
+    <p class="text-gray-300 mb-6">Receive a beautifully designed certificate when you finish the course.</p>
+    <img src="https://images.unsplash.com/photo-1607083206967-040fd41e4c39?auto=format&fit=crop&w=800&q=80" alt="Certificate Preview" class="mx-auto rounded-lg shadow-lg max-w-2xl">
+  </section>
+<!-- Payment Section -->
+<section id="payment" class="py-16 px-6 bg-gray-900 text-center">
+  <h2 class="text-3xl font-bold mb-4">Enroll Now – Only ₹499</h2>
+  <p class="text-gray-300 text-lg mb-6">Pay using the UPI ID below and send a screenshot to our email to confirm your spot.</p>
+  <div class="bg-gray-800 p-4 rounded-lg inline-block mb-4">
+    <p class="text-xl font-semibold text-green-400">saivigneshgoud80okaxis</p>
+  </div>
+  <div class="mb-4">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?data=upi://pay?pa=saivigneshgoud80okaxis&pn=AI%20Filmmaking%20Course&am=499&cu=INR&mode=02" alt="UPI QR Code" class="mx-auto w-40 h-40" />
+  </div>
+  <p class="mt-2 text-sm text-gray-400">Send payment confirmation to: wildmonkey1019@gmail.com or whatsapp us <a href="https://wa.me/919848396732" class="underline text-blue-400">+91 9848396732</a></p>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-gray-500 bg-black">
+    © 2025 AI Filmmakers. All rights reserved.
+  </footer>
+
+</body>
+</html>
